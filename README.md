@@ -1,11 +1,9 @@
 # Application Insights for web pages with custom events
 
+This demo demonstrates the usage of Application Insights on web pages, what metrics it captures, and how custom events can be used to track the usage of certain features on a web page. This can be helpful when tracking client-side features that cannot be monitored on the server. This can be quite useful for Jamstack sites as well.
+
 ![Screenshot of Web Application built for the demo](./images/2022-02-17-23-22-28.png)
 
-## Purpose 
-The purpose of this demo is to demonstrate the usage of Application Insights on web pages, what metrics it captures, and how 
-custom events can be used to track the usage of certain features on a web page. This can be helpful when tracking client-side features that
-cannot be monitored on the server. This can be quite useful for Jamstack sites as well.
 
 ## How it works
 
