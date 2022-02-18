@@ -21,9 +21,11 @@ Using the [Javascript library](https://docs.microsoft.com/en-us/azure/azure-moni
 
 ## Screenshots 
 
-![Screenshot of Events tab](./images/2022-02-17-23-35-23.png)
-![Screenshot of Events tab with more details of the custom events](./images/2022-02-17-23-35-49.png)
-![Kusto Query Screenshot](./2022-02-17-23-45-11.png)
+| | | 
+| --- | --- | 
+| ![Screenshot of Events tab](./images/2022-02-17-23-35-23.png) | ![Screenshot of Events tab with more details of the custom events](./images/2022-02-17-23-35-49.png) | 
+![Kusto Query Screenshot](./images/2022-02-17-23-45-11.png) |
+| --- | --- | --- |
 
 ## Security
 
