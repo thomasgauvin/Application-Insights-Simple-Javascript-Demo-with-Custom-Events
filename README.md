@@ -44,11 +44,14 @@ This demo uses the Custom Events trackEvent, trackMetric and trackException. Mor
     ```
     </details>
 
-2. Call TrackEvent for Custom Events as [documented here](https://docs.microsoft.com/en-us/azure/azure-monitor/app/api-custom-events-metrics#trackevent):
+2. Call TrackEvent, TrackMetric or TrackException for Custom Events as [documented here](https://docs.microsoft.com/en-us/azure/azure-monitor/app/api-custom-events-metrics#trackevent):
 
     ```javascript
     appInsights.trackEvent({name: "incrementCount"});
+    appInsights.trackMetric({name: "incrementCount", average: 4});
+    appInsights.trackException(new Error('Manual error thrown'));
     ```
+
 3. Disable any adblocker. Wait 5-10 minutes to see the events in the Application Insights resource in the Azure Portal.
 
 ## Advanced Screenshots 
