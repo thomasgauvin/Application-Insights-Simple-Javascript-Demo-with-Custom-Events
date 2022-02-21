@@ -11,6 +11,8 @@ This demo demonstrates the usage of Application Insights on web pages, what metr
 
 Using the [Javascript library](https://docs.microsoft.com/en-us/azure/azure-monitor/app/javascript), we can send telemetry directly from our web page Javascript. This lets us receive data such as page visits, page visit time, visit path, errors in Javascript, etc. It also allows us to send custom events that could be used to track features.
 
+This demo uses the Custom Events trackEvent, trackMetric and trackException. More custom events can be found here: https://docs.microsoft.com/en-us/azure/azure-monitor/app/api-custom-events-metrics
+
 ## How to run this repository
 
 1. Clone the repository locally

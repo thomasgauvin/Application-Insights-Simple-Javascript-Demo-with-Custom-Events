@@ -3,12 +3,27 @@ function incrementCount() {
     var x = document.getElementById("demo");
     x.value = parseInt(x.value) + 1;
 
-    appInsights.trackEvent({name: "incrementCount"});
+    var y = parseInt(x.value);
+
+    appInsights.trackEvent({name: "incrementCount", properties: {
+        value: y
+    }});
+
+    //the second parameter is average, not value
+    //as documented here https://docs.microsoft.com/en-us/azure/azure-monitor/app/api-custom-events-metrics#single-values
+    //read documentation here https://docs.microsoft.com/en-us/azure/azure-monitor/app/api-custom-events-metrics#trackmetric
+    //the documentation explains that metrics should be aggregated since individual metrics are rarely valuable
+    appInsights.trackMetric({name: "incrementCount", average: y});
 }
 
 function causeError() {
     try{
         throw new Error("This is an error");
+    }
+    //catch error and send to appInsights
+    catch(error){
+        appInsights.trackException(error);
+        throw error;
     }
     finally{
         appInsights.trackEvent({name:"manualError"});
